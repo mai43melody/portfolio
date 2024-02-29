@@ -504,8 +504,7 @@ header h1 {
   /*下からの距離が変化して全体が下→上→下に動く*/
 }
 .siteWrapper main .topWraper .TopTitle {
-  font-size: 3rem;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
   padding: 4rem 0 5rem;
@@ -519,9 +518,21 @@ header h1 {
 }
 .siteWrapper main .topWraper .TopTitle h2:nth-child(1) {
   text-align: start;
+  font-size: 3rem;
+}
+@media (max-width: 420px) {
+  .siteWrapper main .topWraper .TopTitle h2:nth-child(1) {
+    font-size: 2rem;
+  }
 }
 .siteWrapper main .topWraper .TopTitle h2:nth-child(2) {
   text-align: end;
+  font-size: 3rem;
+}
+@media (max-width: 420px) {
+  .siteWrapper main .topWraper .TopTitle h2:nth-child(2) {
+    font-size: 2rem;
+  }
 }
 .siteWrapper main .topWraper .top {
   width: 50%;
@@ -613,6 +624,11 @@ header h1 {
   100% {
     bottom: 1%;
   }
+}
+.siteWrapper main h2 {
+  font-family: "Italiana", sans-serif;
+  font-size: 2rem;
+  text-align: center;
 }
 .siteWrapper main h6 {
   font-family: "Belgrano", serif;

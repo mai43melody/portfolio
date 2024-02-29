@@ -35,6 +35,7 @@ header {
     div {
         width: 50px;
         margin-left: 2rem;
+
         @media (max-width : 450px) {
             margin-left: 1rem;
         }
@@ -42,6 +43,7 @@ header {
 
     h1 {
         font-size: 2rem;
+
         @media (max-width : 450px) {
             font-size: 1.5rem;
         }
@@ -128,8 +130,7 @@ header {
             height: calc(100vh - 80px);
 
             .TopTitle {
-                font-size: 3rem;
-                width: 90%;
+                width: 70%;
                 margin: 0 auto;
                 text-align: center;
                 padding: 4rem 0 5rem;
@@ -139,13 +140,22 @@ header {
                     font-size: 2rem;
                     width: 80%;
                 }
+                
 
                 h2:nth-child(1) {
                     text-align: start;
+                    font-size: 3rem;
+                    @media (max-width : 420px) {
+                        font-size: 2rem;
+                    }
                 }
 
                 h2:nth-child(2) {
                     text-align: end;
+                    font-size: 3rem;
+                    @media (max-width : 420px) {
+                        font-size: 2rem;
+                    }
                 }
             }
 
@@ -254,6 +264,12 @@ header {
             }
         }
 
+        h2 {
+            font-family: "Italiana", sans-serif;
+            font-size: 2rem;
+            text-align: center;
+        }
+
         h6 {
             font-family: "Belgrano", serif;
             text-align: start;
@@ -338,7 +354,7 @@ header {
         .drawer {
             display: none;
         }
-    
+
         .drawer_menu {
             width: 8rem;
             height: 15rem;
