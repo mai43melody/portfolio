@@ -1,0 +1,359 @@
+@use 'variable' as v;
+
+.campanellaTop {
+    padding: 3rem 0 4rem;
+    @media (max-width : 400px) {
+        padding: 3rem 0 0;
+    }
+
+    .colorBox {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0.5rem 0;
+        @media (max-width : 400px) {
+            gap: 0.4rem;
+        }
+
+        div {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            @media (max-width : 400px) {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            &:nth-child(1) {
+                background-color: #EDCCBC;
+            }
+
+            &:nth-child(2) {
+                background-color: #F7EDE7;
+            }
+
+            &:nth-child(3) {
+                background-color: #F45998;
+            }
+
+            &:nth-child(4) {
+                background-color: #BBEFBE;
+            }
+            
+            &:nth-child(5) {
+                background-color: #E86F5B;
+            }
+
+            &:nth-child(6) {
+                background-color: #BBBBF2;
+            }
+            &:nth-child(7) {
+                background-color: #F4BAD2;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    p:nth-of-type(1) {
+        font-family: "BIZ UDPMincho", serif;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+    }
+
+    .mockImage {
+        width: 80%;
+        margin: 1rem auto 2rem;
+    }
+
+    .Point {
+        width: 70%;
+        margin: 0 auto;
+        @media (max-width : 540px) {
+            width: 80%;
+        }
+
+        @media (max-width : 415px) {
+            width: 90%;
+        }
+
+        h6 {
+            margin-left: 4rem;
+            text-align: start;
+            @media (max-width : 475px) {
+                margin-left: 2rem;
+                font-size: 1.25rem;
+            }
+
+            @media (max-width : 375px) {
+                margin-left: 1rem;
+            }
+
+            @media (min-width : 800px) {
+                margin-left: 2rem;
+            }
+        }
+
+        ul {
+            li {
+                p {
+                    margin-left: 4rem;
+                    text-align: start;
+                    @media (max-width : 475px) {
+                        margin-left: 2rem;
+                    }
+
+                    @media (max-width : 375px) {
+                        margin-left: 1rem;
+                    }
+
+                    @media (min-width : 800px) {
+                        margin-left: 2rem;
+                    }
+
+                    &:before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        display: inline-block;
+                        background-color: #BBEFBE;
+                        border-radius: 50%;
+                        position: relative;
+                        left: -1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .cLoadImage{
+        width: 100%;
+        box-shadow: v.$shadow;
+        margin: 2rem 0 3rem;
+    }
+}
+
+.campanellaComp {
+    background-color: #ffffff;
+    padding: 4rem 0;
+    @media (max-width : 400px) {
+        padding: 2rem 0;
+    }
+
+    .CompTitle {
+        display: flex;
+        gap: 70%;
+        width: 80%;
+        margin: 0 auto 2rem;
+        font-family: "BIZ UDPMincho", serif;
+        @media (max-width : 420px) {
+            font-size: 0.8rem;
+            margin: 0 auto 1rem;
+        }
+
+        @media (max-width : 335px) {
+            gap: 63%;
+        }
+    }
+
+    .C_Comp {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto;
+
+        .C_PC {
+            width: 60%;
+
+            img {
+                box-shadow: v.$shadow;
+            }
+        }
+
+        .C_SP {
+            width: 25%;
+
+            img{
+                box-shadow: v.$shadow;
+            }
+        }
+    }
+}
+
+.campanellaBanner{
+    width: 100%;
+    background-color: v.$cream;
+    padding: 4rem 0 3rem;
+    @media (max-width : 400px) {
+        padding: 0 0 2rem;
+    }
+
+    .campanellaB-Image{
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: v.$shadow;
+        @media (max-width : 400px) {
+            width: 80%;
+        }
+    }
+
+    .colorBox{
+        width: 70%;
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: flex-end;
+
+        div{
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+
+            &:nth-child(1){
+                background-color: #CA475C;
+            }
+            &:nth-child(2){
+                background-color: #F7C3BE;
+            }
+            &:nth-child(3){
+                background-color: #FDEEBB;
+            }
+            &:nth-child(4){
+                background-color: #FCE5D9;
+            }
+        }
+    }
+
+    .Point{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+.logosilhouette{
+    background-color: #ffffff;
+    padding: 4rem 0;
+    @media (max-width : 400px) {
+        padding: 2rem 0;
+    }
+
+    .campanellaLogo{
+        
+        .logoWrapper{
+            width: 85%;
+            margin: 0 auto;
+            background-color: v.$cream;
+            border: 1px solid v.$mainfont;
+            border-radius: 5px;
+            box-shadow: v.$shadow;
+            
+            h3{
+                padding: 2rem 0 2rem;
+            }
+            
+            .logoBox{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                padding: 0 1rem;
+                @media (max-width : 600px) {
+                    gap: 1rem;
+                }
+                @media (max-width : 430px) {
+                    display: block;
+                }
+                @media (min-width : 800px) {
+                    gap: 1rem;
+                }
+                
+                .logoIcon{
+                    width: 20%;
+                    @media (max-width : 600px) {
+                        width: 25%;
+                    }
+                    @media (max-width : 430px) {
+                        width: 35%;
+                        margin: 0 auto;
+                    }
+                    @media (min-width : 800px) {
+                        width: 30%;
+                    }
+                }
+
+                .Point{
+                    width: 45%;
+                    @media (max-width : 600px) {
+                        width: 60%;
+                    }
+                    @media (max-width : 430px) {
+                        width: 100%;
+                    }
+                    @media (min-width : 800px) {
+                        width: 60%;
+                    }
+                    
+                    h6{
+                        font-size: 1rem;
+                        margin: 0.5rem 0;
+                    }
+                }
+            }
+            
+            .logoBox2{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin: 2rem 0 3rem;
+                padding: 0 1rem;
+                
+                div{
+                    width: 80px;
+                }
+            }
+        }
+    }
+    
+    .silhouette{
+        
+        .silhouetteWrapper{
+            width: 85%;
+            margin: 3rem auto 0;
+            background-color: v.$cream;
+            border: 1px solid v.$mainfont;
+            border-radius: 5px;
+            box-shadow: v.$shadow;
+            
+            h3{
+                padding: 2rem 0 2rem;
+            }
+
+            .silhouetteBox1,
+            .silhouetteBox2{
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                @media (max-width : 500px) {
+                    width: 90%;
+                    gap: 1.5rem;
+                }
+                @media (max-width : 430px) {
+                    flex-wrap: wrap;
+                }
+            }
+
+            .silhouetteBox2{
+                margin: 2rem auto;
+            }
+        }
+    }
+}

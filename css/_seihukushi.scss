@@ -1,0 +1,255 @@
+@use 'variable' as v;
+
+
+.seihukushiTop {
+    padding: 3rem 0 4rem;
+    @media (max-width : 500px) {
+        padding: 3rem 0 2rem;
+    }
+
+    .colorBox {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0.5rem 0;
+
+        div {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+
+            &:nth-child(1) {
+                background-color: #0F5474;
+            }
+
+            &:nth-child(2) {
+                background-color: #EBC350;
+            }
+
+            &:nth-child(3) {
+                background-color: #F2EEE1;
+            }
+
+            &:nth-child(4) {
+                background-color: #FC7216;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    p:nth-of-type(1) {
+        font-family: "BIZ UDPMincho", serif;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+    }
+
+    .mockImage {
+        width: 80%;
+        margin: 1rem auto 2rem;
+    }
+
+    .Point {
+        width: 80%;
+        margin: 0 auto;
+
+        h6 {
+            margin-left: 3rem;
+            text-align: start;
+
+            @media (max-width : 475px) {
+                margin-left: 2rem;
+                font-size: 1.25rem;
+            }
+
+            @media (max-width : 375px) {
+                margin-left: 1rem;
+            }
+
+            @media (min-width : 800px) {
+                margin-left: 2rem;
+            }
+        }
+
+        ul {
+            li {
+                p {
+                    margin-left: 3rem;
+                    text-align: start;
+                    @media (max-width : 475px) {
+                        margin-left: 2rem;
+                    }
+
+                    @media (max-width : 375px) {
+                        margin-left: 1rem;
+                    }
+
+                    @media (min-width : 800px) {
+                        margin-left: 2rem;
+                    }
+
+                    &:before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        display: inline-block;
+                        background-color: #FC7216;
+                        border-radius: 50%;
+                        position: relative;
+                        left: -1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.seihukushiComp {
+    width: 100%;
+    background-color: v.$subpurple;
+
+    .seiPCcomp {
+
+        .CompTitle2 {
+            font-family: "BIZ UDPMincho", serif;
+            width: 60%;
+            margin: 0 auto;
+            padding: 3rem 0 0;
+            @media (max-width : 500px) {
+                padding: 2rem 0 0;
+            }
+        }
+
+        .seiPC1 {
+            width: 60%;
+            margin: 3rem auto;
+
+            img {
+                box-shadow: v.$shadow;
+            }
+        }
+
+        .seiPC2 {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            @media (max-width : 650px) {
+                width: 90%;
+            }
+
+            
+
+            .seiPCBox {
+                width: 40%;
+                @media (max-width : 650px) {
+                    width: 45%;
+                }
+            }
+
+            .seiPCBox2 {
+                width: 40%;
+                @media (max-width : 650px) {
+                    width: 45%;
+                }
+
+                .seiText {
+                    font-family: "Noto Sans JP", sans-serif;
+                    font-size: 0.85rem;
+                    margin-top: 1rem;
+                    @media (max-width : 450px) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+            img {
+                box-shadow: v.$shadow;
+            }
+        }
+
+        .seiPC3 {
+            width: 60%;
+            margin: 3rem auto;
+
+            img {
+                box-shadow: v.$shadow;
+            }
+        }
+    }
+
+    .seiSPcomp {
+        background-color: v.$cream;
+
+        .CompTitle2 {
+            font-family: "BIZ UDPMincho", serif;
+            width: 60%;
+            margin: 0 auto;
+            padding: 3rem 0 0;
+        }
+
+        .seiSP1 {
+            display: flex;
+            width: 90%;
+            justify-content: end;
+            margin: 3rem auto;
+            gap: 2rem;
+
+            img {
+                box-shadow: v.$shadow;
+            }
+        }
+
+        .seiSP2 {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            @media (max-width : 650px) {
+                width: 90%;
+            }
+
+            .seiSPBox1 {
+                width: 40%;
+                @media (max-width : 650px) {
+                    width: 45%;
+                }
+            }
+
+            .seiSPBox2 {
+                width: 40%;
+                @media (max-width : 650px) {
+                    width: 45%;
+                }
+            }
+
+            img {
+                box-shadow: v.$shadow;
+            }
+        }
+
+        .seiSP3 {
+            width: 40%;
+            margin: 3rem auto;
+            @media (max-width : 450px) {
+                width: 55%;
+            }
+
+            img {
+                box-shadow: v.$shadow;
+            }
+        }
+    }
+}
+
+// display: flex;
+// justify-content: space-around;
+// width: 90%;
+// margin: 0 auto;
+
+// font-family: "BIZ UDPMincho", serif;

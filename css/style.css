@@ -1,0 +1,2417 @@
+@charset "UTF-8";
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  color: #2F3336;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Italiana", sans-serif;
+  background-color: #ffffff;
+}
+header div {
+  width: 50px;
+  margin-left: 2rem;
+}
+@media (max-width: 450px) {
+  header div {
+    margin-left: 1rem;
+  }
+}
+header h1 {
+  font-size: 2rem;
+}
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.pcBackGround {
+  width: 100%;
+  height: 100vh;
+  background: rgb(233, 124, 157);
+  background: linear-gradient(180deg, rgba(233, 124, 157, 0.4023984594) 0%, rgba(233, 124, 157, 0.6012780112) 35%, rgba(213, 102, 128, 0.6965161064) 70%, rgba(194, 81, 102, 0.800157563) 100%), #C25166;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  /* これであらゆる要素の裏側に回す */
+}
+
+.pcBackGroundDown {
+  width: 100%;
+  height: 100vh;
+  background: rgb(233, 124, 157);
+  background: linear-gradient(180deg, rgba(233, 124, 157, 0.4023984594) 0%, rgba(233, 124, 157, 0.6012780112) 35%, rgba(213, 102, 128, 0.6965161064) 70%, rgba(194, 81, 102, 0.800157563) 100%);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  /* これであらゆる要素の裏側に回す */
+}
+
+.siteWrapper {
+  width: 100%;
+  margin-inline: auto;
+  background-color: #FFFAF4;
+}
+.siteWrapper .drawer {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  inset-block-start: 1rem;
+  inset-inline-end: 1rem;
+  z-index: 100;
+  background-color: #fff;
+  border-radius: 5px;
+  background-image: url(../images/menu.png);
+  background-position: center;
+  background-size: 2.5rem;
+  background-repeat: no-repeat;
+}
+.siteWrapper .drawer_menu {
+  width: 10rem;
+  height: 20rem;
+  position: fixed;
+  inset-inline-end: -10rem;
+  transition: all 0.4s linear;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+  font-family: "Italiana", sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.siteWrapper .open {
+  inset-inline-end: 0;
+}
+.siteWrapper .active {
+  background-image: url(../images/close.png);
+}
+.siteWrapper main {
+  width: 100%;
+}
+.siteWrapper main .topWraper {
+  width: 100%;
+  height: calc(100vh - 80px);
+  /*下からの距離が変化して全体が下→上→下に動く*/
+}
+.siteWrapper main .topWraper .TopTitle {
+  font-size: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0 5rem;
+  font-family: "Italiana", sans-serif;
+}
+@media (max-width: 420px) {
+  .siteWrapper main .topWraper .TopTitle {
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+.siteWrapper main .topWraper .TopTitle h2:nth-child(1) {
+  text-align: start;
+}
+.siteWrapper main .topWraper .TopTitle h2:nth-child(2) {
+  text-align: end;
+}
+.siteWrapper main .topWraper .top {
+  width: 50%;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.siteWrapper main .topWraper .top .topIcon {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url(../images/icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.siteWrapper main .topWraper .top .topIcon p {
+  width: 100%;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  font-family: "Italiana", sans-serif;
+}
+@media (max-width: 490px) {
+  .siteWrapper main .topWraper .top .topIcon p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .siteWrapper main .topWraper .top .topIcon p {
+    font-size: 1.5rem;
+  }
+}
+.siteWrapper main .topWraper .scrollDown {
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1.2s ease-in-out infinite;
+  margin: 6rem auto;
+  /*Scrollテキストの描写*/
+  /* 矢印の描写 */
+}
+.siteWrapper main .topWraper .scrollDown span {
+  /*描画位置*/
+  position: absolute;
+  left: -20px;
+  bottom: 10px;
+  /*テキストの形状*/
+  color: #2F3336;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  writing-mode: vertical-rl;
+}
+.siteWrapper main .topWraper .scrollDown:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  /*矢印の形状*/
+  width: 1px;
+  height: 20px;
+  background: #2F3336;
+  transform: skewX(-31deg);
+}
+.siteWrapper main .topWraper .scrollDown:after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*矢印の形状*/
+  width: 1px;
+  height: 50px;
+  background: #2F3336;
+}
+@keyframes arrowmove {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+.siteWrapper main h6 {
+  font-family: "Belgrano", serif;
+  text-align: start;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.siteWrapper main .Point p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+.siteWrapper main .Button {
+  width: 150px;
+  padding: 1rem 1.5rem 1rem 2rem;
+  margin: 2rem auto;
+  border-radius: 8px;
+  background-color: #E97C9D;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.siteWrapper main .Button p {
+  color: #ffffff;
+}
+.siteWrapper main .Button div {
+  background-image: url(../images/allow.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: center right;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+}
+.siteWrapper main .Button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+  border: 1px solid #E97C9D;
+  background-color: #ffffff;
+}
+.siteWrapper main .Button:hover p {
+  color: #E97C9D;
+}
+.siteWrapper main .Button:hover div {
+  background-image: url(../images/allow2.svg);
+}
+.siteWrapper footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.siteWrapper footer p {
+  font-size: 0.9rem;
+  font-family: "Italiana", sans-serif;
+}
+
+@media (min-width: 800px) {
+  .siteWrapper {
+    max-width: 30rem;
+    margin-inline: auto;
+    background-color: #FFFAF4;
+  }
+  .siteWrapper .drawer {
+    display: none;
+  }
+  .siteWrapper .drawer_menu {
+    width: 8rem;
+    height: 15rem;
+    inset-block: 0;
+    margin-block: auto;
+    inset-inline-end: 2.5rem;
+    background-color: transparent;
+    color: #FFFAF4;
+  }
+}
+.works {
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 0.5rem;
+}
+.works .hairSalon,
+.works .animalCafe,
+.works .sSite,
+.works .bPage {
+  width: 75%;
+  margin: 0 auto;
+}
+@media (max-width: 450px) {
+  .works .hairSalon,
+  .works .animalCafe,
+  .works .sSite,
+  .works .bPage {
+    width: 90%;
+  }
+}
+.works .hairSalon .WorksImage,
+.works .animalCafe .WorksImage,
+.works .sSite .WorksImage,
+.works .bPage .WorksImage {
+  width: 100%;
+  aspect-ratio: 9/8;
+  background-color: #FFFAF4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.works .hairSalon .WorksImage a,
+.works .animalCafe .WorksImage a,
+.works .sSite .WorksImage a,
+.works .bPage .WorksImage a {
+  text-align: center;
+}
+.works .hairSalon .WorksImage a img,
+.works .animalCafe .WorksImage a img,
+.works .sSite .WorksImage a img,
+.works .bPage .WorksImage a img {
+  width: 80%;
+}
+.works .hairSalon .WorksImage .hover-mask,
+.works .animalCafe .WorksImage .hover-mask,
+.works .sSite .WorksImage .hover-mask,
+.works .bPage .WorksImage .hover-mask {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  /* 最初は透明(非表示) */
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.6s ease;
+  /* ゆっくりopacityのみへ変化させる */
+  width: 100%;
+}
+.works .hairSalon .WorksImage .hover-mask p,
+.works .animalCafe .WorksImage .hover-mask p,
+.works .sSite .WorksImage .hover-mask p,
+.works .bPage .WorksImage .hover-mask p {
+  width: 80%;
+  font-family: "Belgrano", serif;
+}
+.works .hairSalon .WorksImage .hover-mask:hover,
+.works .animalCafe .WorksImage .hover-mask:hover,
+.works .sSite .WorksImage .hover-mask:hover,
+.works .bPage .WorksImage .hover-mask:hover {
+  opacity: 1;
+  /* hoverしたら透過しない(表示させる) */
+}
+.works .hairSalon .WorksImage:hover,
+.works .animalCafe .WorksImage:hover,
+.works .sSite .WorksImage:hover,
+.works .bPage .WorksImage:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in;
+}
+.works .hairSalon .WorksText,
+.works .animalCafe .WorksText,
+.works .sSite .WorksText,
+.works .bPage .WorksText {
+  width: 60%;
+  background-color: #FFE7EE;
+  margin: 1rem 0 6rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 1rem 0.5rem 1rem 1rem;
+}
+@media (max-width: 530px) {
+  .works .hairSalon .WorksText,
+  .works .animalCafe .WorksText,
+  .works .sSite .WorksText,
+  .works .bPage .WorksText {
+    margin: 1rem 0 3rem;
+  }
+}
+@media (min-width: 800px) {
+  .works .hairSalon .WorksText,
+  .works .animalCafe .WorksText,
+  .works .sSite .WorksText,
+  .works .bPage .WorksText {
+    margin: 1rem 0 3rem;
+  }
+}
+.works .hairSalon .WorksText .worksTitle,
+.works .animalCafe .WorksText .worksTitle,
+.works .sSite .WorksText .worksTitle,
+.works .bPage .WorksText .worksTitle {
+  font-family: "Italiana", sans-serif;
+  font-size: 1.5rem;
+}
+@media (max-width: 530px) {
+  .works .hairSalon .WorksText .worksTitle,
+  .works .animalCafe .WorksText .worksTitle,
+  .works .sSite .WorksText .worksTitle,
+  .works .bPage .WorksText .worksTitle {
+    font-size: 1.2rem;
+  }
+}
+.works .hairSalon .WorksText .worksName,
+.works .animalCafe .WorksText .worksName,
+.works .sSite .WorksText .worksName,
+.works .bPage .WorksText .worksName {
+  font-size: 0.65rem;
+  padding-top: 0.2rem;
+}
+@media (max-width: 530px) {
+  .works .hairSalon .WorksText .worksName,
+  .works .animalCafe .WorksText .worksName,
+  .works .sSite .WorksText .worksName,
+  .works .bPage .WorksText .worksName {
+    font-size: 0.5rem;
+  }
+}
+.works .hairSalon .WorksText .worksContent,
+.works .animalCafe .WorksText .worksContent,
+.works .sSite .WorksText .worksContent,
+.works .bPage .WorksText .worksContent {
+  font-size: 0.75rem;
+  padding-top: 2rem;
+}
+@media (max-width: 530px) {
+  .works .hairSalon .WorksText .worksContent,
+  .works .animalCafe .WorksText .worksContent,
+  .works .sSite .WorksText .worksContent,
+  .works .bPage .WorksText .worksContent {
+    font-size: 0.7rem;
+    padding-top: 1.5rem;
+  }
+}
+.works .hairSalon .Mright,
+.works .animalCafe .Mright,
+.works .sSite .Mright,
+.works .bPage .Mright {
+  margin: 1rem 0 6rem 40%;
+}
+@media (max-width: 530px) {
+  .works .hairSalon .Mright,
+  .works .animalCafe .Mright,
+  .works .sSite .Mright,
+  .works .bPage .Mright {
+    margin: 1rem 0 3rem 40%;
+  }
+}
+@media (min-width: 800px) {
+  .works .hairSalon .Mright,
+  .works .animalCafe .Mright,
+  .works .sSite .Mright,
+  .works .bPage .Mright {
+    margin: 1rem 0 3rem 40%;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Italiana", sans-serif;
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+
+h5 {
+  font-family: "Belgrano", serif;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.profile .profileTop {
+  width: 100%;
+}
+.profile .profileTop div {
+  width: 200px;
+  margin: 0 auto;
+}
+.profile .profileTop .name {
+  font-family: "Belgrano", serif;
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 1.75rem;
+}
+.profile .profileTop .TopText {
+  width: 60%;
+  margin: 1rem auto 2rem;
+  font-size: 0.9rem;
+  line-height: 150%;
+  font-family: "Noto Sans JP", sans-serif;
+}
+@media (max-width: 640px) {
+  .profile .profileTop .TopText {
+    width: 80%;
+  }
+}
+@media (min-width: 800px) {
+  .profile .profileTop .TopText {
+    width: 80%;
+  }
+}
+.profile .skills {
+  width: 100%;
+}
+.profile .skills .skillsWrap {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 560px) {
+  .profile .skills .skillsWrap {
+    display: block;
+  }
+}
+@media (min-width: 800px) {
+  .profile .skills .skillsWrap {
+    display: block;
+  }
+}
+.profile .skills .skillsWrap .webdesign,
+.profile .skills .skillsWrap .cording {
+  width: calc((100% - 2rem) / 2);
+}
+@media (max-width: 560px) {
+  .profile .skills .skillsWrap .webdesign,
+  .profile .skills .skillsWrap .cording {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .profile .skills .skillsWrap .webdesign,
+  .profile .skills .skillsWrap .cording {
+    width: 100%;
+  }
+}
+.profile .skills .skillsWrap .webdesign h4,
+.profile .skills .skillsWrap .cording h4 {
+  font-family: "Belgrano", serif;
+  font-size: 1.5rem;
+  padding: 1rem 0 1rem 1rem;
+}
+.profile .skills .skillsWrap .webdesign .wdTitle,
+.profile .skills .skillsWrap .cording .wdTitle {
+  background-image: url(../images/icon-orange.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px;
+}
+.profile .skills .skillsWrap .webdesign .cTitle,
+.profile .skills .skillsWrap .cording .cTitle {
+  background-image: url(../images/icon-purple.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px;
+}
+.profile .skills .skillsWrap .webdesign p,
+.profile .skills .skillsWrap .cording p {
+  font-size: 0.8rem;
+  line-height: 150%;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.profile .skills .skillsWrap .webdesign p:nth-child(3), .profile .skills .skillsWrap .webdesign p:nth-child(6),
+.profile .skills .skillsWrap .cording p:nth-child(3),
+.profile .skills .skillsWrap .cording p:nth-child(6) {
+  padding-top: 0.5rem;
+}
+.profile .student {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.profile .student h5 {
+  margin: 3rem 0;
+}
+.profile .student .skate {
+  width: 85%;
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 560px) {
+  .profile .student .skate {
+    display: block;
+  }
+}
+@media (min-width: 800px) {
+  .profile .student .skate {
+    display: block;
+  }
+}
+.profile .student .skate .skateImage {
+  position: relative;
+  width: calc((100% - 1rem) / 2);
+  aspect-ratio: 1/1;
+}
+@media (max-width: 560px) {
+  .profile .student .skate .skateImage {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .profile .student .skate .skateImage {
+    width: 100%;
+  }
+}
+.profile .student .skate .skateImage .skateImage1 {
+  width: 55%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.profile .student .skate .skateImage .skateImage1 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.profile .student .skate .skateImage .skateImage2 {
+  width: 55%;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.profile .student .skate .skateImage .skateImage2 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.profile .student .skate .skateImage .skateIcon {
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+.profile .student .skate .skateText {
+  width: calc((100% - 1rem) / 2);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.8rem;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 560px) {
+  .profile .student .skate .skateText {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .profile .student .skate .skateText {
+    width: 100%;
+  }
+}
+.profile .student .skate .skateText p {
+  padding: 0 1rem;
+}
+.profile .student .italy {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 560px) {
+  .profile .student .italy {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 800px) {
+  .profile .student .italy {
+    flex-direction: column-reverse;
+  }
+}
+.profile .student .italy .italyText {
+  width: calc((100% - 1rem) / 2);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.8rem;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 560px) {
+  .profile .student .italy .italyText {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .profile .student .italy .italyText {
+    width: 100%;
+  }
+}
+.profile .student .italy .italyText p {
+  padding: 0 1rem;
+}
+.profile .student .italy .italyImage {
+  position: relative;
+  width: calc((100% - 1rem) / 2);
+  aspect-ratio: 1/1;
+}
+@media (max-width: 560px) {
+  .profile .student .italy .italyImage {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .profile .student .italy .italyImage {
+    width: 100%;
+  }
+}
+.profile .student .italy .italyImage .italyImage1 {
+  width: 55%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.profile .student .italy .italyImage .italyImage1 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.profile .student .italy .italyImage .italyImage2 {
+  width: 55%;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.profile .student .italy .italyImage .italyImage2 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.profile .student .italy .italyImage .italyIcon {
+  width: 30%;
+  position: absolute;
+  top: 65%;
+  left: 0;
+}
+.profile .strength {
+  width: 100%;
+}
+.profile .strength h5 span {
+  font-family: "BIZ UDPMincho", serif;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.profile .strength ul {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.8rem;
+  line-height: 150%;
+  width: 80%;
+  margin: 2rem auto 4rem;
+}
+.profile .strength ul li {
+  display: flex;
+  margin-top: 0.9rem;
+  gap: 1rem;
+}
+.profile .strength ul li p:nth-child(1),
+.profile .strength ul li p:nth-child(3),
+.profile .strength ul li p:nth-child(5),
+.profile .strength ul li p:nth-child(7),
+.profile .strength ul li p:nth-child(9) {
+  width: 5rem;
+  margin-left: 1rem;
+}
+.profile .designer {
+  width: 100%;
+}
+.profile .designer h5 {
+  font-family: "BIZ UDPMincho", serif;
+}
+.profile .designer ul {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.8rem;
+  line-height: 150%;
+  width: 80%;
+  margin: 2rem auto 4rem;
+}
+@media (max-width: 630px) {
+  .profile .designer ul {
+    width: 90%;
+  }
+}
+.profile .designer ul li {
+  margin-top: 0.8rem;
+}
+.profile .designer ul li p {
+  margin-left: 2rem;
+}
+.profile .designer ul li p:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #E97C9D;
+  border-radius: 50%;
+  position: relative;
+  left: -1rem;
+}
+.profile .like {
+  width: 100%;
+}
+.profile .like ul {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.8rem;
+  line-height: 150%;
+  width: 80%;
+  margin: 2rem auto 4rem;
+}
+@media (max-width: 630px) {
+  .profile .like ul {
+    width: 90%;
+  }
+}
+.profile .like ul li {
+  margin-top: 0.8rem;
+}
+.profile .like ul li p {
+  margin-left: 2rem;
+}
+.profile .like ul li p:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #E97C9D;
+  border-radius: 50%;
+  position: relative;
+  left: -1rem;
+}
+
+.contact {
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+.contact p {
+  text-align: center;
+  margin: 10rem 0;
+}
+
+.serenellaTop {
+  padding: 3rem 0 4rem;
+}
+@media (max-width: 400px) {
+  .serenellaTop {
+    padding: 3rem 0 2rem;
+  }
+}
+.serenellaTop .colorBox {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+.serenellaTop .colorBox div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.serenellaTop .colorBox div:nth-child(1) {
+  background-color: #F7F1FF;
+}
+.serenellaTop .colorBox div:nth-child(2) {
+  background-color: #BB8EAC;
+}
+.serenellaTop .colorBox div:nth-child(3) {
+  background-color: #A5D2D8;
+}
+.serenellaTop .colorBox div:nth-child(4) {
+  background-color: #BD68A1;
+}
+.serenellaTop p {
+  text-align: center;
+}
+.serenellaTop p:nth-of-type(1) {
+  font-family: "BIZ UDPMincho", serif;
+}
+.serenellaTop p:nth-of-type(2) {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+.serenellaTop .mockImage {
+  width: 80%;
+  margin: 1rem auto 2rem;
+}
+.serenellaTop .Point {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 540px) {
+  .serenellaTop .Point {
+    width: 80%;
+  }
+}
+@media (max-width: 415px) {
+  .serenellaTop .Point {
+    width: 90%;
+  }
+}
+.serenellaTop .Point h6 {
+  margin-left: 4rem;
+  text-align: start;
+}
+@media (max-width: 475px) {
+  .serenellaTop .Point h6 {
+    margin-left: 2rem;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 375px) {
+  .serenellaTop .Point h6 {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 800px) {
+  .serenellaTop .Point h6 {
+    margin-left: 2rem;
+  }
+}
+.serenellaTop .Point ul li p {
+  margin-left: 4rem;
+  text-align: start;
+}
+@media (max-width: 475px) {
+  .serenellaTop .Point ul li p {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .serenellaTop .Point ul li p {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 800px) {
+  .serenellaTop .Point ul li p {
+    margin-left: 2rem;
+  }
+}
+.serenellaTop .Point ul li p:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #BD68A1;
+  border-radius: 50%;
+  position: relative;
+  left: -1rem;
+}
+@media (max-width: 370px) {
+  .serenellaTop .Point ul li p:before {
+    left: -0.5rem;
+  }
+}
+
+.serenellaComp {
+  margin-bottom: 3rem;
+}
+@media (max-width: 420px) {
+  .serenellaComp {
+    margin-bottom: 0;
+  }
+}
+.serenellaComp .CompTitle {
+  display: flex;
+  gap: 70%;
+  width: 80%;
+  margin: 0 auto 2rem;
+  font-family: "BIZ UDPMincho", serif;
+}
+@media (max-width: 420px) {
+  .serenellaComp .CompTitle {
+    font-size: 0.8rem;
+    margin: 0 auto 1rem;
+  }
+}
+@media (max-width: 335px) {
+  .serenellaComp .CompTitle {
+    gap: 63%;
+  }
+}
+.serenellaComp .S_Comp {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+}
+.serenellaComp .S_Comp .S_PC {
+  width: 60%;
+}
+.serenellaComp .S_Comp .S_PC img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.serenellaComp .S_Comp .S_SP {
+  width: 25%;
+}
+.serenellaComp .S_Comp .S_SP div:nth-child(1) img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.serenellaComp .S_Comp .S_SP div:nth-child(2) {
+  margin: 2rem 0 2rem;
+}
+.serenellaComp .S_Comp .S_SP div:nth-child(2) img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.shampoo {
+  width: 100%;
+}
+.shampoo .Point {
+  width: 70%;
+  margin: 0 auto;
+}
+.shampoo .shampooImageWrap {
+  width: 95%;
+  margin: 0 auto;
+}
+.shampoo .shampooBox {
+  width: 100%;
+  position: relative;
+  margin: 4rem 0 7rem;
+}
+@media (max-width: 450px) {
+  .shampoo .shampooBox {
+    margin: 2rem 0 3rem;
+  }
+}
+.shampoo .shampooBox .shampooBanner {
+  width: 55%;
+}
+.shampoo .shampooBox .shampooBanner img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.shampoo .shampooBox .shampooBanner:nth-child(2) {
+  margin-left: 45%;
+  margin-top: -4rem;
+  margin-bottom: -4rem;
+}
+.shampoo .shampooBox .shampooBottle1,
+.shampoo .shampooBox .shampooBottle2,
+.shampoo .shampooBox .shampooBottle3 {
+  position: absolute;
+  width: 30%;
+}
+.shampoo .shampooBox .shampooBottle1 {
+  top: 9%;
+  left: 48%;
+}
+@media (max-width: 450px) {
+  .shampoo .shampooBox .shampooBottle1 {
+    top: 7%;
+  }
+}
+@media (max-width: 375px) {
+  .shampoo .shampooBox .shampooBottle1 {
+    top: 5%;
+  }
+}
+.shampoo .shampooBox .shampooBottle2 {
+  top: 55%;
+  left: 75%;
+}
+.shampoo .shampooBox .shampooBottle3 {
+  top: 50%;
+  left: 20%;
+}
+@media (max-width: 520px) {
+  .shampoo .shampooBox .shampooBottle3 {
+    top: 45%;
+  }
+}
+@media (max-width: 375px) {
+  .shampoo .shampooBox .shampooBottle3 {
+    top: 40%;
+  }
+}
+@media (min-width: 800px) {
+  .shampoo .shampooBox .shampooBottle3 {
+    top: 45%;
+  }
+}
+
+.serenellaBanner {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 4rem 0 3rem;
+}
+@media (max-width: 400px) {
+  .serenellaBanner {
+    padding: 0 0 3rem;
+  }
+}
+.serenellaBanner .serenellaB-Image {
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 400px) {
+  .serenellaBanner .serenellaB-Image {
+    width: 80%;
+  }
+}
+.serenellaBanner .colorBox {
+  width: 70%;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.serenellaBanner .colorBox div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.serenellaBanner .colorBox div:nth-child(1) {
+  background-color: #F6F1D6;
+}
+.serenellaBanner .colorBox div:nth-child(2) {
+  background-color: #A5D2D8;
+}
+.serenellaBanner .colorBox div:nth-child(3) {
+  background-color: #EDE896;
+}
+.serenellaBanner .colorBox div:nth-child(4) {
+  background-color: #B6D56A;
+}
+.serenellaBanner .Point {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.serenellaLogo {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.serenellaLogo .s-logoWrap {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+@media (min-width: 800px) {
+  .serenellaLogo .s-logoWrap {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .serenellaLogo .s-logoWrap {
+    display: block;
+  }
+}
+.serenellaLogo .s-logoWrap .s-logoBox {
+  width: calc((100% - 1rem) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (min-width: 800px) {
+  .serenellaLogo .s-logoWrap .s-logoBox {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .serenellaLogo .s-logoWrap .s-logoBox:nth-child(2) {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .serenellaLogo .s-logoWrap .s-logoBox {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .serenellaLogo .s-logoWrap .s-logoBox:nth-child(2) {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .serenellaLogo .s-logoWrap .s-logoBox {
+    width: 90%;
+  }
+}
+.serenellaLogo .s-logoWrap .s-logoBox div {
+  width: calc(50% - 1rem);
+}
+.serenellaLogo .Point {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.campanellaTop {
+  padding: 3rem 0 4rem;
+}
+@media (max-width: 400px) {
+  .campanellaTop {
+    padding: 3rem 0 0;
+  }
+}
+.campanellaTop .colorBox {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+@media (max-width: 400px) {
+  .campanellaTop .colorBox {
+    gap: 0.4rem;
+  }
+}
+.campanellaTop .colorBox div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+@media (max-width: 400px) {
+  .campanellaTop .colorBox div {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.campanellaTop .colorBox div:nth-child(1) {
+  background-color: #EDCCBC;
+}
+.campanellaTop .colorBox div:nth-child(2) {
+  background-color: #F7EDE7;
+}
+.campanellaTop .colorBox div:nth-child(3) {
+  background-color: #F45998;
+}
+.campanellaTop .colorBox div:nth-child(4) {
+  background-color: #BBEFBE;
+}
+.campanellaTop .colorBox div:nth-child(5) {
+  background-color: #E86F5B;
+}
+.campanellaTop .colorBox div:nth-child(6) {
+  background-color: #BBBBF2;
+}
+.campanellaTop .colorBox div:nth-child(7) {
+  background-color: #F4BAD2;
+}
+.campanellaTop p {
+  text-align: center;
+}
+.campanellaTop p:nth-of-type(1) {
+  font-family: "BIZ UDPMincho", serif;
+}
+.campanellaTop p:nth-of-type(2) {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+.campanellaTop .mockImage {
+  width: 80%;
+  margin: 1rem auto 2rem;
+}
+.campanellaTop .Point {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 540px) {
+  .campanellaTop .Point {
+    width: 80%;
+  }
+}
+@media (max-width: 415px) {
+  .campanellaTop .Point {
+    width: 90%;
+  }
+}
+.campanellaTop .Point h6 {
+  margin-left: 4rem;
+  text-align: start;
+}
+@media (max-width: 475px) {
+  .campanellaTop .Point h6 {
+    margin-left: 2rem;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 375px) {
+  .campanellaTop .Point h6 {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 800px) {
+  .campanellaTop .Point h6 {
+    margin-left: 2rem;
+  }
+}
+.campanellaTop .Point ul li p {
+  margin-left: 4rem;
+  text-align: start;
+}
+@media (max-width: 475px) {
+  .campanellaTop .Point ul li p {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .campanellaTop .Point ul li p {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 800px) {
+  .campanellaTop .Point ul li p {
+    margin-left: 2rem;
+  }
+}
+.campanellaTop .Point ul li p:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #BBEFBE;
+  border-radius: 50%;
+  position: relative;
+  left: -1rem;
+}
+.campanellaTop .cLoadImage {
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 2rem 0 3rem;
+}
+
+.campanellaComp {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+@media (max-width: 400px) {
+  .campanellaComp {
+    padding: 2rem 0;
+  }
+}
+.campanellaComp .CompTitle {
+  display: flex;
+  gap: 70%;
+  width: 80%;
+  margin: 0 auto 2rem;
+  font-family: "BIZ UDPMincho", serif;
+}
+@media (max-width: 420px) {
+  .campanellaComp .CompTitle {
+    font-size: 0.8rem;
+    margin: 0 auto 1rem;
+  }
+}
+@media (max-width: 335px) {
+  .campanellaComp .CompTitle {
+    gap: 63%;
+  }
+}
+.campanellaComp .C_Comp {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+}
+.campanellaComp .C_Comp .C_PC {
+  width: 60%;
+}
+.campanellaComp .C_Comp .C_PC img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.campanellaComp .C_Comp .C_SP {
+  width: 25%;
+}
+.campanellaComp .C_Comp .C_SP img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.campanellaBanner {
+  width: 100%;
+  background-color: #FFFAF4;
+  padding: 4rem 0 3rem;
+}
+@media (max-width: 400px) {
+  .campanellaBanner {
+    padding: 0 0 2rem;
+  }
+}
+.campanellaBanner .campanellaB-Image {
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 400px) {
+  .campanellaBanner .campanellaB-Image {
+    width: 80%;
+  }
+}
+.campanellaBanner .colorBox {
+  width: 70%;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.campanellaBanner .colorBox div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.campanellaBanner .colorBox div:nth-child(1) {
+  background-color: #CA475C;
+}
+.campanellaBanner .colorBox div:nth-child(2) {
+  background-color: #F7C3BE;
+}
+.campanellaBanner .colorBox div:nth-child(3) {
+  background-color: #FDEEBB;
+}
+.campanellaBanner .colorBox div:nth-child(4) {
+  background-color: #FCE5D9;
+}
+.campanellaBanner .Point {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.logosilhouette {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+@media (max-width: 400px) {
+  .logosilhouette {
+    padding: 2rem 0;
+  }
+}
+.logosilhouette .campanellaLogo .logoWrapper {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #FFFAF4;
+  border: 1px solid #2F3336;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.logosilhouette .campanellaLogo .logoWrapper h3 {
+  padding: 2rem 0 2rem;
+}
+.logosilhouette .campanellaLogo .logoWrapper .logoBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+@media (max-width: 600px) {
+  .logosilhouette .campanellaLogo .logoWrapper .logoBox {
+    gap: 1rem;
+  }
+}
+@media (max-width: 430px) {
+  .logosilhouette .campanellaLogo .logoWrapper .logoBox {
+    display: block;
+  }
+}
+@media (min-width: 800px) {
+  .logosilhouette .campanellaLogo .logoWrapper .logoBox {
+    gap: 1rem;
+  }
+}
+.logosilhouette .campanellaLogo .logoWrapper .logoBox .logoIcon {
+  width: 20%;
+}
+@media (max-width: 600px) {
+  .logosilhouette .campanellaLogo .logoWrapper .logoBox .logoIcon {
+    width: 25%;
+  }
+}
+@media (max-width: 430px) {
+  .logosilhouette .campanellaLogo .logoWrapper .logoBox .logoIcon {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 800px) {
+  .logosilhouette .campanellaLogo .logoWrapper .logoBox .logoIcon {
+    width: 30%;
+  }
+}
+.logosilhouette .campanellaLogo .logoWrapper .logoBox .Point {
+  width: 45%;
+}
+@media (max-width: 600px) {
+  .logosilhouette .campanellaLogo .logoWrapper .logoBox .Point {
+    width: 60%;
+  }
+}
+@media (max-width: 430px) {
+  .logosilhouette .campanellaLogo .logoWrapper .logoBox .Point {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .logosilhouette .campanellaLogo .logoWrapper .logoBox .Point {
+    width: 60%;
+  }
+}
+.logosilhouette .campanellaLogo .logoWrapper .logoBox .Point h6 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.logosilhouette .campanellaLogo .logoWrapper .logoBox2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+  padding: 0 1rem;
+}
+.logosilhouette .campanellaLogo .logoWrapper .logoBox2 div {
+  width: 80px;
+}
+.logosilhouette .silhouette .silhouetteWrapper {
+  width: 85%;
+  margin: 3rem auto 0;
+  background-color: #FFFAF4;
+  border: 1px solid #2F3336;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.logosilhouette .silhouette .silhouetteWrapper h3 {
+  padding: 2rem 0 2rem;
+}
+.logosilhouette .silhouette .silhouetteWrapper .silhouetteBox1,
+.logosilhouette .silhouette .silhouetteWrapper .silhouetteBox2 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 500px) {
+  .logosilhouette .silhouette .silhouetteWrapper .silhouetteBox1,
+  .logosilhouette .silhouette .silhouetteWrapper .silhouetteBox2 {
+    width: 90%;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 430px) {
+  .logosilhouette .silhouette .silhouetteWrapper .silhouetteBox1,
+  .logosilhouette .silhouette .silhouetteWrapper .silhouetteBox2 {
+    flex-wrap: wrap;
+  }
+}
+.logosilhouette .silhouette .silhouetteWrapper .silhouetteBox2 {
+  margin: 2rem auto;
+}
+
+.seihukushiTop {
+  padding: 3rem 0 4rem;
+}
+@media (max-width: 500px) {
+  .seihukushiTop {
+    padding: 3rem 0 2rem;
+  }
+}
+.seihukushiTop .colorBox {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+.seihukushiTop .colorBox div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.seihukushiTop .colorBox div:nth-child(1) {
+  background-color: #0F5474;
+}
+.seihukushiTop .colorBox div:nth-child(2) {
+  background-color: #EBC350;
+}
+.seihukushiTop .colorBox div:nth-child(3) {
+  background-color: #F2EEE1;
+}
+.seihukushiTop .colorBox div:nth-child(4) {
+  background-color: #FC7216;
+}
+.seihukushiTop p {
+  text-align: center;
+}
+.seihukushiTop p:nth-of-type(1) {
+  font-family: "BIZ UDPMincho", serif;
+}
+.seihukushiTop p:nth-of-type(2) {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+.seihukushiTop .mockImage {
+  width: 80%;
+  margin: 1rem auto 2rem;
+}
+.seihukushiTop .Point {
+  width: 80%;
+  margin: 0 auto;
+}
+.seihukushiTop .Point h6 {
+  margin-left: 3rem;
+  text-align: start;
+}
+@media (max-width: 475px) {
+  .seihukushiTop .Point h6 {
+    margin-left: 2rem;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 375px) {
+  .seihukushiTop .Point h6 {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 800px) {
+  .seihukushiTop .Point h6 {
+    margin-left: 2rem;
+  }
+}
+.seihukushiTop .Point ul li p {
+  margin-left: 3rem;
+  text-align: start;
+}
+@media (max-width: 475px) {
+  .seihukushiTop .Point ul li p {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .seihukushiTop .Point ul li p {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 800px) {
+  .seihukushiTop .Point ul li p {
+    margin-left: 2rem;
+  }
+}
+.seihukushiTop .Point ul li p:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #FC7216;
+  border-radius: 50%;
+  position: relative;
+  left: -1rem;
+}
+
+.seihukushiComp {
+  width: 100%;
+  background-color: #FAF7FE;
+}
+.seihukushiComp .seiPCcomp .CompTitle2 {
+  font-family: "BIZ UDPMincho", serif;
+  width: 60%;
+  margin: 0 auto;
+  padding: 3rem 0 0;
+}
+@media (max-width: 500px) {
+  .seihukushiComp .seiPCcomp .CompTitle2 {
+    padding: 2rem 0 0;
+  }
+}
+.seihukushiComp .seiPCcomp .seiPC1 {
+  width: 60%;
+  margin: 3rem auto;
+}
+.seihukushiComp .seiPCcomp .seiPC1 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.seihukushiComp .seiPCcomp .seiPC2 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 650px) {
+  .seihukushiComp .seiPCcomp .seiPC2 {
+    width: 90%;
+  }
+}
+.seihukushiComp .seiPCcomp .seiPC2 .seiPCBox {
+  width: 40%;
+}
+@media (max-width: 650px) {
+  .seihukushiComp .seiPCcomp .seiPC2 .seiPCBox {
+    width: 45%;
+  }
+}
+.seihukushiComp .seiPCcomp .seiPC2 .seiPCBox2 {
+  width: 40%;
+}
+@media (max-width: 650px) {
+  .seihukushiComp .seiPCcomp .seiPC2 .seiPCBox2 {
+    width: 45%;
+  }
+}
+.seihukushiComp .seiPCcomp .seiPC2 .seiPCBox2 .seiText {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+@media (max-width: 450px) {
+  .seihukushiComp .seiPCcomp .seiPC2 .seiPCBox2 .seiText {
+    font-size: 0.7rem;
+  }
+}
+.seihukushiComp .seiPCcomp .seiPC2 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.seihukushiComp .seiPCcomp .seiPC3 {
+  width: 60%;
+  margin: 3rem auto;
+}
+.seihukushiComp .seiPCcomp .seiPC3 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.seihukushiComp .seiSPcomp {
+  background-color: #FFFAF4;
+}
+.seihukushiComp .seiSPcomp .CompTitle2 {
+  font-family: "BIZ UDPMincho", serif;
+  width: 60%;
+  margin: 0 auto;
+  padding: 3rem 0 0;
+}
+.seihukushiComp .seiSPcomp .seiSP1 {
+  display: flex;
+  width: 90%;
+  justify-content: end;
+  margin: 3rem auto;
+  gap: 2rem;
+}
+.seihukushiComp .seiSPcomp .seiSP1 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.seihukushiComp .seiSPcomp .seiSP2 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 650px) {
+  .seihukushiComp .seiSPcomp .seiSP2 {
+    width: 90%;
+  }
+}
+.seihukushiComp .seiSPcomp .seiSP2 .seiSPBox1 {
+  width: 40%;
+}
+@media (max-width: 650px) {
+  .seihukushiComp .seiSPcomp .seiSP2 .seiSPBox1 {
+    width: 45%;
+  }
+}
+.seihukushiComp .seiSPcomp .seiSP2 .seiSPBox2 {
+  width: 40%;
+}
+@media (max-width: 650px) {
+  .seihukushiComp .seiSPcomp .seiSP2 .seiSPBox2 {
+    width: 45%;
+  }
+}
+.seihukushiComp .seiSPcomp .seiSP2 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.seihukushiComp .seiSPcomp .seiSP3 {
+  width: 40%;
+  margin: 3rem auto;
+}
+@media (max-width: 450px) {
+  .seihukushiComp .seiSPcomp .seiSP3 {
+    width: 55%;
+  }
+}
+.seihukushiComp .seiSPcomp .seiSP3 img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.top {
+  display: none;
+}
+
+.Nikkan {
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 3rem;
+}
+.Nikkan h2 {
+  background-color: #ffffff;
+  padding: 3rem 0 4rem;
+}
+.Nikkan .NikkanBanner {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.Nikkan .NikkanWrap {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+}
+@media (min-width: 800px) {
+  .Nikkan .NikkanWrap {
+    display: block;
+  }
+}
+@media (max-width: 660px) {
+  .Nikkan .NikkanWrap {
+    display: block;
+  }
+}
+.Nikkan .NikkanWrap .NikkanFlyer {
+  width: 40%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 800px) {
+  .Nikkan .NikkanWrap .NikkanFlyer {
+    width: 60%;
+  }
+}
+@media (max-width: 660px) {
+  .Nikkan .NikkanWrap .NikkanFlyer {
+    width: 60%;
+  }
+}
+.Nikkan .NikkanWrap .NikkanBox {
+  width: 60%;
+  padding-left: 2rem;
+}
+@media (min-width: 800px) {
+  .Nikkan .NikkanWrap .NikkanBox {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media (max-width: 660px) {
+  .Nikkan .NikkanWrap .NikkanBox {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+.Nikkan .NikkanWrap .NikkanBox .colorBox {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 800px) {
+  .Nikkan .NikkanWrap .NikkanBox .colorBox {
+    margin: 2rem auto 0;
+  }
+}
+@media (max-width: 660px) {
+  .Nikkan .NikkanWrap .NikkanBox .colorBox {
+    margin: 2rem auto 0;
+  }
+}
+.Nikkan .NikkanWrap .NikkanBox .colorBox div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.Nikkan .NikkanWrap .NikkanBox .colorBox div:nth-child(1) {
+  background-color: #F5AF7E;
+}
+.Nikkan .NikkanWrap .NikkanBox .colorBox div:nth-child(2) {
+  background-color: #FCB5B5;
+}
+.Nikkan .NikkanWrap .NikkanBox .colorBox div:nth-child(3) {
+  background-color: #429AD0;
+}
+.Nikkan .NikkanWrap .NikkanBox .colorBox div:nth-child(4) {
+  background-color: #FFEBA5;
+}
+.Nikkan .NikkanWrap .NikkanBox .colorBox div:nth-child(5) {
+  background-color: #F8F6DE;
+}
+
+.residence {
+  width: 100%;
+  background-color: #FAF7FE;
+  padding: 4rem 0 3rem;
+}
+.residence .residenceImage {
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.residence .colorBox {
+  width: 70%;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.residence .colorBox div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.residence .colorBox div:nth-child(1) {
+  background-color: #D3C385;
+}
+.residence .colorBox div:nth-child(2) {
+  background-color: #EFDEC4;
+}
+.residence .colorBox div:nth-child(3) {
+  background-color: #FFFFFF;
+  border: 0.5px solid #2F3336;
+}
+.residence .colorBox div:nth-child(4) {
+  background-color: #C8A201;
+}
+.residence .Point {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hamburger {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 4rem 0 3rem;
+}
+.hamburger .hamburgerImage {
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.hamburger .colorBox {
+  width: 70%;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.hamburger .colorBox div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.hamburger .colorBox div:nth-child(1) {
+  background-color: #CF1A1A;
+}
+.hamburger .colorBox div:nth-child(2) {
+  background-color: #FFC700;
+}
+.hamburger .colorBox div:nth-child(3) {
+  background-color: #FFFFFF;
+  border: 0.5px solid #2F3336;
+}
+.hamburger .colorBox div:nth-child(4) {
+  background-color: #312929;
+}
+.hamburger .Point {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.travel {
+  width: 100%;
+  background-color: #FFFAF4;
+  padding: 4rem 0 3rem;
+}
+.travel .travelImage {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.travel .colorBox {
+  width: 70%;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.travel .colorBox div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.travel .colorBox div:nth-child(1) {
+  background-color: #C23D3D;
+}
+.travel .colorBox div:nth-child(2) {
+  background-color: #6E99C0;
+}
+.travel .colorBox div:nth-child(3) {
+  background-color: #FE9900;
+}
+.travel .colorBox div:nth-child(4) {
+  background-color: #6C4848;
+}
+.travel .colorBox div:nth-child(5) {
+  background-color: #FFF3E1;
+  border: 0.5px solid #2F3336;
+}
+.travel .Point {
+  width: 70%;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

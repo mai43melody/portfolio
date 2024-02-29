@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Belgrano&family=Italiana&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <title>Mai Murakami portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/icon.png" alt="">
+        </div>
+        <h1>Mai's portfolio</h1>
+    </header>
+
+    <div class="pcBackGround"></div><!-- ここにパソコン版の背景を入れる -->
+
+    <div class="siteWrapper"><!-- このwrapperでサイト全体を囲う。最大幅30rem(480ピクセル) -->
+
+        <button class="drawer"></button>
+        <nav>
+            <ul class="drawer_menu">
+                <li><a href="#">top</a></li>
+                <li><a href="#Profile">profile</a></li>
+                <li><a href="#Works">works</a></li>
+                <li><a href="#Contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="topWraper">
+                <div class="TopTitle">
+                    <h2>Welcome to</h2>
+                    <h2>Mai's portfolio</h2>
+                </div>
+                <div class="top">
+                    <div class="topIcon">
+                        <p> Mai's portfolio</p>
+                    </div>
+                </div>
+
+                <div class="scrollDown">
+                    <span>scroll</span>
+                    <!-- あとでスクロールバーアニメーションCSS記述 -->
+                </div>
+            </section>
+
+            <section class="profile" id="Profile">
+
+                <div class="profileTop">
+                    <h3>profile</h3>
+                    <!-- <div><img src="" alt=""></div> -->
+                    <p class="name">Mai Murakami</p>
+                    <p class="TopText">大学卒業後、2018年から調味料メーカーで約5年間バックオフィスに従事し、法務・営業事務の部署を経験。<br>
+                        在職中より、SNSやweb、パッケージデザインを活用して商品の魅力を伝えることに関心を持ち、Web業界を志す。<br>
+                        2023年9月より職業訓練校で、デザインツールやWeb制作の基礎を学び、2024年2月修了。</p>
+                </div>
+
+                <div class="skills">
+                    <div class="skillsWrap">
+                        <div class="webdesign">
+                            <h4 class="wdTitle">web design</h4>
+                            <p>
+                                Webサイト、バナーなどの制作ができます。細部まで妥協せず、より良いものを作るためにこだわりを持って取り組んでいます。<br>
+                                見た目の良さだけでなく、情報をどのように伝えるかを考えながら、まとまりや配置にも気を配ります。<br>
+                                課題解決に役に立ち、人の心を動かせるようなデザインを目指しています。
+                            </p>
+                            <p>tools: illustrator/photoshop/Figma</p>
+                        </div>
+                        <div class="cording">
+                            <h4 class="cTitle">cording</h4>
+                            <p>
+                                HTML/CSSを使用し、デザインを正しく実装します。(レスポンシブ対応/scss記述)<br>
+                                またJavascriptを使用し、サイトに動きを加えることができます。<br>
+                                コード記述は規則性を持たせ、誰が見ても分かりやすいコーディング・フォルダ管理を心掛けています。
+                            </p>
+                            <p>tools: Visual Studio Code</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="student">
+                    <h5>student time</h5>
+
+                    <div class="skate">
+                        <div class="skateImage">
+                            <div class="skateImage1">
+                                <img src="images/skateImage1.jpg" alt="">
+                            </div>
+                            <div class="skateImage2">
+                                <img src="images/skateImage2.jpg" alt="">
+                            </div>
+                            <div class="skateIcon">
+                                <img src="images/skateIcon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skateText">
+                            <p>
+                                大学フィギュアスケート部<br>
+                                全く滑ったこともない状態から練習を始め、卒業までの4年間で、5種のシングルジャンプと、4種類のスピンを習得しました。<br>
+                                「できなかったことができるようになる」<br>
+                                自分や仲間の成長と充実に、楽しさ・嬉しさを感じます。<br>
+                                大会運営や幹部メンバーとして後輩の育成を経験し、個人競技としての成長だけでなく、チームとしての成長サポートにも尽力しました。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="italy">
+                        <div class="italyText">
+                            <p>
+                                外国語学部でイタリア語を専攻し、中部のシエナという街に短期留学しました。中でも、西洋美術（絵画・建築）に興味を持ち、その色彩の美しさや構図、作られた背景に関心があり、今もよく美術展に出かけます。<br>
+                                美術を鑑賞することで、デザイン思考も磨かれると思います。
+                            </p>
+                        </div>
+                        <div class="italyImage">
+                            <div class="italyImage1"><img src="images/italyImage1.jpg" alt=""></div>
+                            <div class="italyImage2"><img src="images/italyImage2.jpg" alt=""></div>
+                            <div class="italyIcon"><img src="images/italyIcon.png" alt=""></div>
+                        </div>
+                    </div>
+                </div><!-- student終了 -->
+
+                <div class="strength">
+                    <h5>strength finder<span>私の強み</span></h5>
+                    <ul>
+                        <li>
+                            <p>1位 内省</p>
+                            <p>多角的な視点から深く考え、検討するのが得意です。</p>
+                        </li>
+                        <li>
+                            <p>2位 未来志向</p>
+                            <p>明確なビジョンを持ち、願望を実現します。</p>
+                        </li>
+                        <li>
+                            <p>3位 収集心</p>
+                            <p>情報・アイデアを追求し、信頼性の高い知識を活用します。</p>
+                        </li>
+                        <li>
+                            <p>4位 共感性</p>
+                            <p>人の考えや感情を汲み取り、相手に寄り添うことができます。</p>
+                        </li>
+                        <li>
+                            <p>5位 学習欲</p>
+                            <p>向上心を持ち、新しい知識や情報を取り入れて活用します。</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="designer">
+                    <h5>ありたいwebデザイナー像</h5>
+                    <ul>
+                        <li>
+                            <p>どうすれば商品やサービスの魅力を引き出せるかを考えたマーケティング思考</p>
+                        </li>
+                        <li>
+                            <p>ユーザーの利益を重視した制作</p>
+                        </li>
+                        <li>
+                            <p>配色センスを磨きつつ、そのデザインにした理由まで明確に相手に説明できる</p>
+                        </li>
+                        <li>
+                            <p>他の人にもわかりやすいコーディング記述、フォルダ管理</p>
+                        </li>
+                        <li>
+                            <p>制作進行管理が行き届き、それぞれの強みを活かして連携しているチーム作り</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="like">
+                    <h5>Like</h5>
+                    <ul>
+                        <li>
+                            <p>ドラマ/映画鑑賞</p>
+                        </li>
+                        <li>
+                            <p>西洋美術展巡り</p>
+                        </li>
+                        <li>
+                            <p>韓国語学習（ハングル検定3級）準2級勉強中<br>
+                                字幕なしでドラマが観れるようになりたい！</p>
+                        </li>
+                        <li>
+                            <p>ファッション<br>
+                                トレンドや感性を磨きつつ、似合う色・素材・質感までちょうどいい似合うものを見つけたくて、休日は服屋さんによく行きます。</p>
+                        </li>
+                        <li>
+                            <p>少ないモノでスッキリ暮らす<br>
+                                整理整頓が得意 整理整頓は思考の整理にもつながります。</p>
+                        </li>
+                    </ul>
+                </div>
+            </section><!-- profile終了 -->
+
+            <section class="works" id="Works">
+                <h3>works</h3>
+
+                <div class="hairSalon">
+                    <div class="WorksImage">
+                        <a href="serenella.html">
+                            <img src="images/works1.png" alt="">
+                            <div class="hover-mask">
+                                <p>
+                                    please click.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="WorksText Mright">
+                        <p class="worksTitle">
+                            hair salon website
+                        </p>
+                        <p class="worksName">
+                            Mai Murakami 2024
+                        </p>
+                        <p class="worksContent">
+                            A beauty salon that gently envelops and provides a relaxing atmosphere.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="animalCafe">
+                    <div class="WorksImage">
+                        <a href="campanella.html">
+                            <img src="images/works2.png" alt="">
+                            <div class="hover-mask">
+                                <p>
+                                    please click.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="WorksText">
+                        <p class="worksTitle">
+                            animal cafe website
+                        </p>
+                        <p class="worksName">
+                            Mai Murakami 2024
+                        </p>
+                        <p class="worksContent">
+                            An animal café with a distinctively whimsical and adorable atmosphere, unlike the surrounding cafés.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sSite">
+                    <div class="WorksImage">
+                        <a href="seihukushi.html">
+                            <img src="images/works3.png" alt="">
+                            <div class="hover-mask">
+                                <p>
+                                  please click.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="WorksText Mright">
+                        <p class="worksTitle">
+                            website design
+                        </p>
+                        <p class="worksName">
+                            Mai Murakami and team 2023
+                        </p>
+                        <p class="worksContent">
+                            "A future of mutual prosperity that connects people and fosters mutual well-being."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bPage">
+                    <div class="WorksImage">
+                        <a href="banner.html">
+                            <img src="images/works4.png" alt="">
+                            <div class="hover-mask">
+                                <p>
+                                  please click.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="WorksText">
+                        <p class="worksTitle">
+                            banner Page
+                        </p>
+                        <p class="worksName">
+                            Mai Murakami 2024
+                        </p>
+                        <p class="worksContent">
+                            Design for resolving challenges and effectively communicating information.
+                        </p>
+                    </div>
+                </div>
+            </section><!-- works終了 -->
+
+            <section class="contact" id="Contact">
+                <h3>contact</h3>
+                <p>coming soon...</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>
+                <small>
+                    &copy;2024MaiMurakami
+                </small>
+            </p>
+        </footer>
+
+    </div><!-- /.siteWrapper 終了-->
+    <script src="js/common.js"></script>
+</body>
+
+</html>

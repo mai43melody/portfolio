@@ -1,0 +1,374 @@
+@use 'variable' as v;
+
+.serenellaTop {
+    padding: 3rem 0 4rem;
+    @media (max-width : 400px) {
+        padding: 3rem 0 2rem;
+    }
+
+    .colorBox {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0.5rem 0;
+
+        div {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+
+            &:nth-child(1) {
+                background-color: #F7F1FF;
+            }
+
+            &:nth-child(2) {
+                background-color: #BB8EAC;
+            }
+
+            &:nth-child(3) {
+                background-color: #A5D2D8;
+            }
+
+            &:nth-child(4) {
+                background-color: #BD68A1;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    p:nth-of-type(1) {
+        font-family: "BIZ UDPMincho", serif;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+    }
+
+    .mockImage {
+        width: 80%;
+        margin: 1rem auto 2rem;
+    }
+
+    .Point {
+        width: 70%;
+        margin: 0 auto;
+
+        @media (max-width : 540px) {
+            width: 80%;
+        }
+
+        @media (max-width : 415px) {
+            width: 90%;
+        }
+
+        h6 {
+            margin-left: 4rem;
+            text-align: start;
+
+            @media (max-width : 475px) {
+                margin-left: 2rem;
+                font-size: 1.25rem;
+            }
+
+            @media (max-width : 375px) {
+                margin-left: 1rem;
+            }
+
+            @media (min-width : 800px) {
+                margin-left: 2rem;
+            }
+        }
+
+        ul {
+            li {
+                p {
+                    margin-left: 4rem;
+                    text-align: start;
+
+                    @media (max-width : 475px) {
+                        margin-left: 2rem;
+                    }
+
+                    @media (max-width : 375px) {
+                        margin-left: 1rem;
+                    }
+
+                    @media (min-width : 800px) {
+                        margin-left: 2rem;
+                    }
+
+                    &:before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        display: inline-block;
+                        background-color: #BD68A1;
+                        border-radius: 50%;
+                        position: relative;
+                        left: -1rem;
+
+                        @media (max-width : 370px) {
+                            left: -0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.serenellaComp {
+    margin-bottom: 3rem;
+
+    @media (max-width : 420px) {
+        margin-bottom: 0;
+    }
+
+    .CompTitle {
+        display: flex;
+        gap: 70%;
+        width: 80%;
+        margin: 0 auto 2rem;
+        font-family: "BIZ UDPMincho", serif;
+
+        @media (max-width : 420px) {
+            font-size: 0.8rem;
+            margin: 0 auto 1rem;
+        }
+
+        @media (max-width : 335px) {
+            gap: 63%;
+        }
+    }
+
+    .S_Comp {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto;
+
+        .S_PC {
+            width: 60%;
+
+            img {
+                box-shadow: v.$shadow;
+            }
+        }
+
+        .S_SP {
+            width: 25%;
+
+            div:nth-child(1) {
+                img {
+                    box-shadow: v.$shadow;
+                }
+            }
+
+            div:nth-child(2) {
+                margin: 2rem 0 2rem;
+
+                img {
+                    box-shadow: v.$shadow;
+                }
+            }
+        }
+    }
+}
+
+.shampoo {
+    width: 100%;
+
+    .Point {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .shampooImageWrap {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .shampooBox {
+        width: 100%;
+        position: relative;
+        margin: 4rem 0 7rem;
+
+        @media (max-width : 450px) {
+            margin: 2rem 0 3rem;
+        }
+
+        .shampooBanner {
+            width: 55%;
+
+            img {
+                box-shadow: v.$shadow;
+            }
+
+            &:nth-child(2) {
+                margin-left: 45%;
+                margin-top: -4rem;
+                margin-bottom: -4rem;
+            }
+        }
+
+        .shampooBottle1,
+        .shampooBottle2,
+        .shampooBottle3 {
+            position: absolute;
+            width: 30%;
+        }
+
+        .shampooBottle1 {
+            top: 9%;
+            left: 48%;
+
+            @media (max-width : 450px) {
+                top: 7%;
+            }
+
+            @media (max-width : 375px) {
+                top: 5%;
+            }
+        }
+
+        .shampooBottle2 {
+            top: 55%;
+            left: 75%;
+        }
+
+        .shampooBottle3 {
+            top: 50%;
+            left: 20%;
+
+            @media (max-width : 520px) {
+                top: 45%;
+            }
+
+            @media (max-width : 375px) {
+                top: 40%;
+            }
+
+            @media (min-width : 800px) {
+                top: 45%;
+            }
+        }
+    }
+}
+
+.serenellaBanner {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 4rem 0 3rem;
+    @media (max-width : 400px) {
+        padding: 0 0 3rem;
+    }
+
+    .serenellaB-Image {
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: v.$shadow;
+        @media (max-width : 400px) {
+            width: 80%;
+        }
+    }
+
+    .colorBox {
+        width: 70%;
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: flex-end;
+
+        div {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+
+            &:nth-child(1) {
+                background-color: #F6F1D6;
+            }
+
+            &:nth-child(2) {
+                background-color: #A5D2D8;
+            }
+
+            &:nth-child(3) {
+                background-color: #EDE896;
+            }
+
+            &:nth-child(4) {
+                background-color: #B6D56A;
+            }
+        }
+    }
+
+    .Point {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.serenellaLogo {
+    width: 100%;
+    padding-bottom: 3rem;
+
+    .s-logoWrap {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        gap: 1rem;
+
+        @media (min-width : 800px) {
+            display: block;
+        }
+
+        @media (max-width : 600px) {
+            display: block;
+        }
+
+        .s-logoBox {
+            width: calc((100% - 1rem) / 2);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            @media (min-width : 800px) {
+                width: 70%;
+                margin: 0 auto;
+
+                &:nth-child(2){
+                    margin-top: 1rem;
+                }
+            }
+
+            @media (max-width : 600px) {
+                width: 70%;
+                margin: 0 auto;
+
+                &:nth-child(2){
+                    margin-top: 1rem;
+                }
+            }
+
+            @media (max-width : 450px) {
+                width: 90%;
+
+            }
+
+            div {
+                width: calc(50% - 1rem);
+            }
+
+        }
+
+    }
+
+    .Point {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

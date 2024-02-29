@@ -1,0 +1,353 @@
+@use 'variable' as v;
+
+// font-family: "Italiana", sans-serif;
+// font-family: "Noto Sans JP", sans-serif;
+// font-family: "BIZ UDPMincho", serif;
+// font-family: "Belgrano", serif;
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    color: v.$mainfont;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    // position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // z-index: 2;
+    font-family: "Italiana", sans-serif;
+    background-color: #ffffff;
+
+    div {
+        width: 50px;
+        margin-left: 2rem;
+        @media (max-width : 450px) {
+            margin-left: 1rem;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+        @media (max-width : 450px) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.pcBackGround {
+    width: 100%;
+    height: 100vh;
+    background: rgb(233, 124, 157);
+    background: linear-gradient(180deg, rgba(233, 124, 157, 0.4023984593837535) 0%, rgba(233, 124, 157, 0.6012780112044818) 35%, rgba(213, 102, 128, 0.6965161064425771) 70%, rgba(194, 81, 102, 0.80015756302521) 100%), #C25166;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    /* これであらゆる要素の裏側に回す */
+}
+
+.pcBackGroundDown {
+    width: 100%;
+    height: 100vh;
+    background: rgb(233, 124, 157);
+    background: linear-gradient(180deg, rgba(233, 124, 157, 0.4023984593837535) 0%, rgba(233, 124, 157, 0.6012780112044818) 35%, rgba(213, 102, 128, 0.6965161064425771) 70%, rgba(194, 81, 102, 0.80015756302521) 100%);
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    /* これであらゆる要素の裏側に回す */
+}
+
+.siteWrapper {
+    width: 100%;
+    // height: 100vh;
+    margin-inline: auto;
+    background-color: v.$cream;
+
+    .drawer {
+        width: 2.5rem;
+        height: 2.5rem;
+        position: fixed;
+        inset-block-start: 1rem;
+        inset-inline-end: 1rem;
+        z-index: 100;
+        background-color: #fff;
+        border-radius: 5px;
+        background-image: url(../images/menu.png);
+        background-position: center;
+        background-size: 2.5rem;
+        background-repeat: no-repeat;
+    }
+
+    .drawer_menu {
+        width: 10rem;
+        height: 20rem;
+        position: fixed;
+        inset-inline-end: -10rem;
+        transition: all 0.4s linear;
+        text-align: center;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        font-size: 1.5rem;
+        font-family: "Italiana", sans-serif;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .open {
+        inset-inline-end: 0;
+    }
+
+    .active {
+        background-image: url(../images/close.png);
+    }
+
+
+    main {
+        width: 100%;
+
+        .topWraper {
+            width: 100%;
+            height: calc(100vh - 80px);
+
+            .TopTitle {
+                font-size: 3rem;
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 4rem 0 5rem;
+                font-family: "Italiana", sans-serif;
+
+                @media (max-width : 420px) {
+                    font-size: 2rem;
+                    width: 80%;
+                }
+
+                h2:nth-child(1) {
+                    text-align: start;
+                }
+
+                h2:nth-child(2) {
+                    text-align: end;
+                }
+            }
+
+
+            .top {
+                width: 50%;
+                margin: 0 auto;
+                aspect-ratio: 1 / 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .topIcon {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    background-image: url(../images/icon.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+
+                    p {
+                        width: 100%;
+                        font-size: 2.5rem;
+                        position: absolute;
+                        top: 50%;
+                        text-align: center;
+                        font-family: "Italiana", sans-serif;
+
+                        @media (max-width : 490px) {
+                            font-size: 2rem;
+                        }
+
+                        @media (max-width : 400px) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+
+            .scrollDown {
+                position: absolute;
+                bottom: 5%;
+                right: 50%;
+                /*矢印の動き1秒かけて永遠にループ*/
+                animation: arrowmove 1.2s ease-in-out infinite;
+                margin: 6rem auto;
+
+                /*Scrollテキストの描写*/
+                span {
+                    /*描画位置*/
+                    position: absolute;
+                    left: -20px;
+                    bottom: 10px;
+                    /*テキストの形状*/
+                    color: v.$mainfont;
+                    font-size: 0.7rem;
+                    letter-spacing: 0.05em;
+                    /*縦書き設定*/
+                    -ms-writing-mode: tb-rl;
+                    -webkit-writing-mode: vertical-rl;
+                    writing-mode: vertical-rl;
+                }
+
+                /* 矢印の描写 */
+                &:before {
+                    content: "";
+                    /*描画位置*/
+                    position: absolute;
+                    bottom: 0;
+                    right: -6px;
+                    /*矢印の形状*/
+                    width: 1px;
+                    height: 20px;
+                    background: v.$mainfont;
+                    transform: skewX(-31deg);
+                }
+
+                &:after {
+                    content: "";
+                    /*描画位置*/
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    /*矢印の形状*/
+                    width: 1px;
+                    height: 50px;
+                    background: v.$mainfont;
+                }
+            }
+
+            /*下からの距離が変化して全体が下→上→下に動く*/
+            @keyframes arrowmove {
+                0% {
+                    bottom: 1%;
+                }
+
+                50% {
+                    bottom: 3%;
+                }
+
+                100% {
+                    bottom: 1%;
+                }
+            }
+        }
+
+        h6 {
+            font-family: "Belgrano", serif;
+            text-align: start;
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        .Point {
+            p {
+                font-family: "Noto Sans JP", sans-serif;
+                font-size: 0.8rem;
+                line-height: 150%;
+            }
+        }
+
+
+        .Button {
+            width: 150px;
+            padding: 1rem 1.5rem 1rem 2rem;
+            margin: 2rem auto;
+            border-radius: 8px;
+            background-color: v.$mainpink;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: v.$shadow;
+
+            p {
+                color: #ffffff;
+            }
+
+            div {
+                background-image: url(../images/allow.svg);
+                background-repeat: no-repeat;
+                background-size: 12px 12px;
+                background-position: center right;
+                width: 15px;
+                height: 15px;
+                margin-top: 2px;
+            }
+
+        }
+
+        .Button:hover {
+            transform: scale(1.1);
+            transition: all 0.2s ease-in;
+            border: 1px solid v.$mainpink;
+            background-color: #ffffff;
+
+            p {
+                color: v.$mainpink;
+            }
+
+            div {
+                background-image: url(../images/allow2.svg);
+            }
+        }
+    }
+
+
+
+    footer {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+
+        p {
+            font-size: 0.9rem;
+            font-family: "Italiana", sans-serif;
+        }
+    }
+}
+
+@media (min-width : 800px) {
+    .siteWrapper {
+        max-width: 30rem;
+        margin-inline: auto;
+        background-color: v.$cream;
+
+        .drawer {
+            display: none;
+        }
+    
+        .drawer_menu {
+            width: 8rem;
+            height: 15rem;
+            inset-block: 0;
+            margin-block: auto;
+            inset-inline-end: 2.5rem;
+            background-color: transparent;
+            color: v.$cream;
+        }
+    }
+
+}

@@ -1,0 +1,236 @@
+@use 'variable' as v;
+
+.top{
+    display: none;
+}
+
+
+.Nikkan{
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 3rem;
+    
+    h2{
+        background-color: #ffffff;
+        padding: 3rem 0 4rem;
+    }
+
+    .NikkanBanner{
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: v.$shadow;
+    }
+
+    .NikkanWrap{
+        width: 80%;
+        margin: 2rem auto;
+        display: flex;
+
+        @media (min-width : 800px){
+            display: block;
+        }
+        @media (max-width : 660px){
+            display: block;
+        }
+
+        .NikkanFlyer{
+            width: 40%;
+            box-shadow: v.$shadow;
+
+            @media (min-width : 800px){
+                width: 60%;
+            }
+            @media (max-width : 660px){
+                width: 60%;
+            }
+        }
+
+        .NikkanBox{
+            width: 60%;
+            padding-left: 2rem;
+
+            @media (min-width : 800px){
+                width: 100%;
+                padding-left: 0;
+            }
+            @media (max-width : 660px){
+                width: 100%;
+                padding-left: 0;
+            }
+
+            .colorBox{
+                display: flex;
+                justify-content: flex-end;
+
+                @media (min-width : 800px){
+                    margin: 2rem auto 0;
+                }
+                @media (max-width : 660px){
+                    margin: 2rem auto 0;
+                }
+
+                div{
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    margin-left: 0.5rem;
+
+                    &:nth-child(1){
+                        background-color: #F5AF7E;
+                    }
+                    &:nth-child(2){
+                        background-color: #FCB5B5;
+                    }
+                    &:nth-child(3){
+                        background-color: #429AD0;
+                    }
+                    &:nth-child(4){
+                        background-color: #FFEBA5;
+                    }
+                    &:nth-child(5){
+                        background-color: #F8F6DE;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.residence{
+    width: 100%;
+    background-color: v.$subpurple;
+    padding: 4rem 0 3rem;
+
+    .residenceImage{
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: v.$shadow;
+    }
+
+    .colorBox{
+        width: 70%;
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: flex-end;
+
+        div{
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+
+            &:nth-child(1){
+                background-color: #D3C385;
+            }
+            &:nth-child(2){
+                background-color: #EFDEC4;
+            }
+            &:nth-child(3){
+                background-color: #FFFFFF;
+                border: 0.5px solid v.$mainfont;
+            }
+            &:nth-child(4){
+                background-color: #C8A201;
+            }
+        }
+    }
+
+    .Point{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.hamburger{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 4rem 0 3rem;
+
+    .hamburgerImage{
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: v.$shadow;
+    }
+
+    .colorBox{
+        width: 70%;
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: flex-end;
+
+        div{
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+
+            &:nth-child(1){
+                background-color: #CF1A1A;
+            }
+            &:nth-child(2){
+                background-color: #FFC700;
+            }
+            &:nth-child(3){
+                background-color: #FFFFFF;
+                border: 0.5px solid v.$mainfont;
+            }
+            &:nth-child(4){
+                background-color: #312929;
+            }
+        }
+    }
+
+    .Point{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.travel{
+    width: 100%;
+    background-color: v.$cream;
+    padding: 4rem 0 3rem;
+
+    .travelImage{
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: v.$shadow;
+    }
+
+    .colorBox{
+        width: 70%;
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: flex-end;
+
+        div{
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+
+            &:nth-child(1){
+                background-color: #C23D3D;
+            }
+            &:nth-child(2){
+                background-color: #6E99C0;
+            }
+            &:nth-child(3){
+                background-color: #FE9900;
+            }
+            &:nth-child(4){
+                background-color: #6C4848;
+            }
+            &:nth-child(5){
+                background-color: #FFF3E1;
+                border: 0.5px solid v.$mainfont;
+            }
+        }
+    }
+
+    .Point{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+

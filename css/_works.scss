@@ -1,0 +1,133 @@
+@use 'variable' as v;
+
+.works {
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 0.5rem;
+
+    .hairSalon,
+    .animalCafe,
+    .sSite,
+    .bPage {
+        width: 75%;
+        margin: 0 auto;
+
+        @media (max-width : 450px) {
+            width: 90%;
+        }
+
+        .WorksImage {
+            width: 100%;
+            aspect-ratio: 9/8;
+            background-color: v.$cream;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: v.$shadow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            a {
+                text-align: center;
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .hover-mask {
+                align-items: center;
+                background: rgba(0, 0, 0, .5);
+                bottom: 0;
+                color: #fff;
+                display: flex;
+                height: auto;
+                justify-content: center;
+                left: 0;
+                opacity: 0;
+                /* 最初は透明(非表示) */
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: opacity .6s ease;
+                /* ゆっくりopacityのみへ変化させる */
+                width: 100%;
+
+                p {
+                    width: 80%;
+                    font-family: "Belgrano", serif;
+                }
+            }
+
+            .hover-mask:hover {
+                opacity: 1;
+                /* hoverしたら透過しない(表示させる) */
+            }
+        }
+
+        .WorksImage:hover {
+            transform: scale(1.05);
+            transition: all 0.2s ease-in;
+        }
+
+
+        .WorksText {
+            width: 60%;
+            background-color: v.$subpink;
+            margin: 1rem 0 6rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: v.$shadow;
+            padding: 1rem 0.5rem 1rem 1rem;
+
+            @media (max-width : 530px) {
+                margin: 1rem 0 3rem;
+            }
+
+            @media (min-width : 800px) {
+                margin: 1rem 0 3rem;
+            }
+
+            .worksTitle {
+                font-family: "Italiana", sans-serif;
+                font-size: 1.5rem;
+
+                @media (max-width : 530px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .worksName {
+                font-size: 0.65rem;
+                padding-top: 0.2rem;
+
+                @media (max-width : 530px) {
+                    font-size: 0.5rem;
+                }
+            }
+
+            .worksContent {
+                font-size: 0.75rem;
+                padding-top: 2rem;
+
+                @media (max-width : 530px) {
+                    font-size: 0.7rem;
+                    padding-top: 1.5rem;
+                }
+            }
+        }
+
+        .Mright {
+            margin: 1rem 0 6rem 40%;
+
+            @media (max-width : 530px) {
+                margin: 1rem 0 3rem 40%;
+            }
+
+            @media (min-width : 800px) {
+                margin: 1rem 0 3rem 40%;
+            }
+        }
+    }
+}
